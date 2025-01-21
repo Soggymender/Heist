@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18E85A3B-94DA-492D-D3CB-61AE093CA964}</ProjectGuid>
+    <ProjectGuid>{85CAAFAE-AE57-F188-3D61-C1C067CA069D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,11 +73,14 @@
     <Compile Include="Assets\Scripts\LobbyMenuUI.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Scripts\PauseMenuUI.cs" />
+    <Compile Include="Assets\ClientNetworkAnimator.cs" />
     <Compile Include="Assets\Scripts\UserInfo.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Scripts\NetworkedThirdPersonController.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1235,51 +1238,51 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="QFSW.QC.ScanRules.csproj">
-      <Project>{C74F90A2-1F4E-D331-80AD-87E5A56AF681}</Project>
+      <Project>{4898C638-D9AC-3567-7D98-6D9D162D892D}</Project>
       <Name>QFSW.QC.ScanRules</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Serializers.csproj">
-      <Project>{1A81B830-E45B-446D-4954-4ADC5731C5C2}</Project>
+      <Project>{1701516E-DE9C-3EF8-6D3F-A7C61DEBD9B3}</Project>
       <Name>QFSW.QC.Serializers</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Grammar.csproj">
-      <Project>{BEB6F76E-8266-2395-85F8-E87527785858}</Project>
+      <Project>{E5E59FFC-2B4C-FCE0-883C-8D2201D7FCA2}</Project>
       <Name>QFSW.QC.Grammar</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.QGUI.csproj">
-      <Project>{FB0D0ED0-236B-A8B7-A342-989B89ABB942}</Project>
+      <Project>{229D9E66-E9A1-E97B-528F-AA71DB32B835}</Project>
       <Name>QFSW.QC.QGUI</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Editor.csproj">
-      <Project>{F3C9C074-9D93-3310-9291-6913E1971BB3}</Project>
+      <Project>{C6A1A2B7-6CF6-756C-C71C-1E98A70CBB75}</Project>
       <Name>QFSW.QC.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Parsers.csproj">
-      <Project>{D3B4C8C6-8303-DD31-BE65-83A9B8AFE617}</Project>
+      <Project>{487C8067-355D-263E-8472-3CD60F424F7E}</Project>
       <Name>QFSW.QC.Parsers</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Suggestors.csproj">
-      <Project>{BD14CF6B-F2C6-DFC7-7091-3F619FE5B3E0}</Project>
+      <Project>{40D2D7C2-521D-B30B-2B8A-944A1A603709}</Project>
       <Name>QFSW.QC.Suggestors</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Extras.csproj">
-      <Project>{EA770E0E-A13D-FB94-3788-188CB48353E1}</Project>
+      <Project>{0E3B2EDC-C7AA-A945-E4D3-96CA09CCEF65}</Project>
       <Name>QFSW.QC.Extras</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.UI.csproj">
-      <Project>{AA101A7E-1D7C-6B4F-2026-CB08AEDCC40A}</Project>
+      <Project>{7AB06D08-ECF9-5D18-7190-F3D535D57388}</Project>
       <Name>QFSW.QC.UI</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.csproj">
-      <Project>{DAE105E4-FE93-D287-2EE3-4A7562A96863}</Project>
+      <Project>{B3CC76EA-38C6-BBCF-7E2E-E7E7DC177AE0}</Project>
       <Name>QFSW.QC</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Demo.csproj">
-      <Project>{97B02489-A316-D64A-DBF5-05399A638BE0}</Project>
+      <Project>{C7E9EEA1-93C9-6B00-2C6E-4BC2348A209C}</Project>
       <Name>QFSW.QC.Demo</Name>
     </ProjectReference>
     <ProjectReference Include="QFSW.QC.Editor.Tools.csproj">
-      <Project>{486A9BC3-81DA-8154-53FF-970ACBF4DCF4}</Project>
+      <Project>{361765C9-72E0-D29C-C07B-A3426E0B8BCE}</Project>
       <Name>QFSW.QC.Editor.Tools</Name>
     </ProjectReference>
   </ItemGroup>
